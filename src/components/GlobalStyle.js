@@ -16,4 +16,9 @@ body {
       monospace;
   }
   
+  img{
+    display: 'block',
+
+    
+  }
 `
