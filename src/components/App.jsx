@@ -1,6 +1,7 @@
 import { GlobalStyle } from './GlobalStyle';
 import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistics/Statistic';
+
+import { StatisticList } from './StatisticList/StatisticList';
 import { FriendList } from './Friends/FriendsList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
@@ -21,7 +22,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" items={data} />
+      <StatisticList title="Upload stats" items={data} />
       <FriendList items={friends} />
       <TransactionHistory items={transactions} />
 
