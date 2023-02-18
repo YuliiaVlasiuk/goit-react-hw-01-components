@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ColorIsActive=styled.div`
+export const ColorIsActive=styled.span`
     width:20px; 
     height:20px;
     border-radius: 50%;

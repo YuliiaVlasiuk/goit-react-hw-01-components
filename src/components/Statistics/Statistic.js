@@ -1,4 +1,25 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const Statistics = ({title,items}) => (
     <section className="statistics"
     style={{ 
@@ -81,62 +102,6 @@ flexDirection:'column'
       </li>
     </ul> 
   </section>
-
-
-
-
-
-
-
-//     <ul>
-//     {items.map(item => (
-//       <li key={item.id}>{item.label}</li>
-//     ))}
-//   </ul>
-  
-   
+ 
               
 )
-
-
-
-  
-// <section className="statistics">
-//   <h2 className="title">{title}</h2>
-
-//  <ul className="stat-list">
-//     <li className="item">
-//       <span className="label">{item[0].label}.docx</span>
-//       <span className="percentage">4%</span>
-//     </li>
-//     <li className="item">
-//       <span className="label">.mp3</span>
-//       <span className="percentage">14%</span>
-//     </li>
-//     <li className="item">
-//       <span className="label">.pdf</span>
-//       <span className="percentage">41%</span>
-//     </li>
-//     <li className="item">
-//       <span className="label">.mp4</span>
-//       <span className="percentage">12%</span>
-//     </li>
-//   </ul> 
-// </section>
-//     // );
-//   };
-  
-// const Recipe = ({ item: { username, avatar, tag } }) => {
-//     return (
-//       <div>
-//         <Image src={avatar} alt={username} width="240p" />
-//         <h2>{username}</h2>
-//         <BsFillAlarmFill />
-  
-//         <div>
-//           <span>{tag} tag</span>
-//         </div>
-//       </div>
-//     );
-//   };
-

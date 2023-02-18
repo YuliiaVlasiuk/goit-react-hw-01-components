@@ -9,7 +9,10 @@ export const FriendItem = ({ item: {name, avatar, isOnline } }) => {
       border: '2px solid grey',
       borderRadius: '4px',
       display:'flex',
-
+ boxShadow:'2px 2px 2px 2px rgba(0, 0, 0, 0.1) ',
+  
+  
+  
      alignItems:'center',
      gap:'20px'
       }} >
@@ -20,7 +23,7 @@ export const FriendItem = ({ item: {name, avatar, isOnline } }) => {
         border: '1px solid grey',
         borderRadius:'5px'
       }} />
-      <h2>{name}</h2>
+      <p>{name}</p>
    </div>
   );
 };
