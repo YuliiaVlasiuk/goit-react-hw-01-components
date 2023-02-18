@@ -17,7 +17,7 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
           className="avatar"
           style={{
             backgroundSize: 'cover',
-            width: '100%',
+            width: '200px',
           }}
         />
         <p
