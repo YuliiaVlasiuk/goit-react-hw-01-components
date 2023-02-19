@@ -5,10 +5,14 @@ import { Statistics } from 'components/Statistics/Statistic';
 import { Statistic ,StatisticSection } from './StatisticList.styled';
 
 export const StatisticList = ({ title, items }) => {
+
+ 
   return (
     < Statistic className="statistics"  >
-      <h2 className="title">{title}</h2>
-      <StatisticSection>
+
+     {title &&  (<h2 className="title">{title}</h2>)}
+     
+     <StatisticSection>
         {items.map(item => (
           <li
             key={item.id}
@@ -23,6 +27,6 @@ export const StatisticList = ({ title, items }) => {
 };
 
 StatisticList.propTypes={
-  title:PropTypes.string.isRequired,
+  title:PropTypes.string,
   items:PropTypes.arrayOf(PropTypes.shape({id:PropTypes.string.isRequired})).isRequired
   }
