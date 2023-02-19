@@ -11,3 +11,21 @@ export const ColorIsActive = styled.span`
     return props.isActive ? 'green' : 'red';
   }};
 `;
+
+export const Image = styled.img`
+  width: 60px;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 5px;
+`;
+
+export const FriendItemSection = styled.div`
+
+width: 400px;
+border: 2px solid grey;
+border-radius:4px;
+display: flex;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1) ;
+align-items: center;
+gap: 20px
+   `;

@@ -1,36 +1,21 @@
 import { Statistics } from 'components/Statistics/Statistic';
 
+import { Statistic ,StatisticSection } from './StatisticList.styled';
+
 export const StatisticList = ({ title, items }) => {
   return (
-    <section
-      className="statistics"
-      style={{
-        width: '401px',
-        border: '1px solid grey',
-        marginTop: '20px',
-      }}
-    >
+    < Statistic className="statistics"  >
       <h2 className="title">{title}</h2>
-
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          width: '100%',
-          height: '50px',
-        }}
-      >
+      <StatisticSection>
         {items.map(item => (
           <li
             key={item.id}
-            style={{
-              listStyle: 'none',
-            }}
+            style={{ listStyle: 'none', }}
           >
             <Statistics item={item} />
           </li>
         ))}
-      </div>
-    </section>
+      </StatisticSection>
+    </ Statistic>
   );
 };

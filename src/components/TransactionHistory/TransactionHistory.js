@@ -1,5 +1,7 @@
 import { Transaction } from 'components/Transaction/Transaction';
 
+import { Th } from './TransactionHistory,styled';
+
 export const TransactionHistory = ({ items }) => {
   return (
     <table
@@ -15,30 +17,9 @@ export const TransactionHistory = ({ items }) => {
         }}
       >
         <tr>
-          <th
-            style={{
-              border: '1px solid #2a2a2a',
-              width: '150px',
-            }}
-          >
-            Type
-          </th>
-          <th
-            style={{
-              border: '1px solid #2a2a2a',
-              width: '150px',
-            }}
-          >
-            Amount
-          </th>
-          <th
-            style={{
-              border: '1px solid #2a2a2a',
-              width: '150px',
-            }}
-          >
-            Currency
-          </th>
+          <Th> Type </Th>
+          <Th> Amount </Th>
+          <Th> Currency </Th>
         </tr>
       </thead>
       <tbody>

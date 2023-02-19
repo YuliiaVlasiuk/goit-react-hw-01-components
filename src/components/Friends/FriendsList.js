@@ -1,26 +1,16 @@
 import { FriendItem } from "components/FriendsItem/FriendItem";
+import { SectionFriendListUl, SectionFriendListLi } from "./FriendsList.styled";
 
 export const FriendList = ({ items }) => {
   return (
-    <ul
-      style={{
-        width: '400px',
-        marginTop: '20px',
-        listStyle: 'none',
-      }}
-    >
+    <SectionFriendListUl >
       {items.map(item => (
-        <li
+        <SectionFriendListLi
           key={item.id}
-          style={{
-            display: 'flex',
-            height: '80px',
-            marginBottom: '10px',
-          }}
         >
           <FriendItem item={item} />
-        </li>
+        </SectionFriendListLi>
       ))}
-    </ul>
+    </SectionFriendListUl >
   );
 };

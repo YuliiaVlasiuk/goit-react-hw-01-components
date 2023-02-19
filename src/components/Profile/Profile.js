@@ -1,24 +1,10 @@
+import { SectionProfile, Image, Stats, StatsItem } from './Profile.styled';
+
 export const Profile = ({ username, avatar, tag, location, stats }) => {
   return (
-    <div
-      className="profile"
-      style={{
-        width: '400px',
-        border: '1px solid grey',
-        borderRadius: '4px',
-        padding: '10px',
-      }}
-    >
+    <SectionProfile className="profile">
       <div className="description">
-        <img
-          src={avatar}
-          alt="User avatar"
-          className="avatar"
-          style={{
-            backgroundSize: 'cover',
-            width: '200px',
-          }}
-        />
+        <Image src={avatar} alt="User avatar" className="avatar" />
         <p
           className="name"
           style={{
@@ -44,44 +30,20 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
           {location}
         </p>
       </div>
-
-      <ul
-        className="stats"
-        style={{
-          display: 'flex',
-          gap: '5px',
-          justifyContent: 'space-between',
-          padding: '10px',
-        }}
-      >
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+      <Stats className="stats">
+        <StatsItem>
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>
-        </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+        </StatsItem>
+        <StatsItem>
           <span className="label">Views</span>
           <span className="quantity">{stats.views}</span>
-        </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+        </StatsItem>
+        <StatsItem>
           <span className="label">Likes</span>
           <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+        </StatsItem>
+      </Stats>
+    </SectionProfile>
   );
 };

@@ -1,3 +1,4 @@
+
 export const Statistics = ({ item }) => {
   return (
     <div
@@ -17,6 +18,6 @@ export const Statistics = ({ item }) => {
   );
 };
 
-function getRandomHexColor() {
+export function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
