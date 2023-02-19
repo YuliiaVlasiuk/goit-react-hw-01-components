@@ -1,4 +1,3 @@
-
 export const Profile = ({ username, avatar, tag, location, stats }) => {
   return (
     <div
@@ -52,7 +51,7 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
           display: 'flex',
           gap: '5px',
           justifyContent: 'space-between',
-          padding:'10px'
+          padding: '10px',
         }}
       >
         <li
@@ -86,32 +85,3 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
     </div>
   );
 };
-
-// import { BsFillAlarmFill } from "react-icons/bs";
-// import PropTypes from 'prop-types';
-// import { Image } from "./Recipe.stiled";
-
-// export const Recipe=({item:{username,avatar,tag}})=>{
-
-// return <div>
-//   <Image src={avatar} alt={username} width="240p"/>
-//   <h2>{username}</h2>
-// <BsFillAlarmFill/>
-
-//  <div>
-//     <span>{tag} tag</span>
-//  </div>
-
-// </div>
-
-// }
-
-// Recipe.propTypes={
-// item:PropTypes.shape({
-//     username:PropTypes.string,
-//     avatar:PropTypes.string,
-//     tag:PropTypes.string}).isRequired
-
-// }
-
-// import PropTypes from 'prop-types';
