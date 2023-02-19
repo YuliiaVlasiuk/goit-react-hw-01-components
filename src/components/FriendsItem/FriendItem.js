@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { ColorIsActive, Image, FriendItemSection } from './FriendItem.styled';
 
 export const FriendItem = ({ item: { name, avatar, isOnline } }) => {
@@ -12,3 +14,11 @@ export const FriendItem = ({ item: { name, avatar, isOnline } }) => {
     </FriendItemSection>
   );
 };
+
+FriendItem.propTypes={
+  item:PropTypes.shape({
+      name:PropTypes.string,
+      avatar:PropTypes.string,
+      isOnline:PropTypes.bool}).isRequired
+  
+  }

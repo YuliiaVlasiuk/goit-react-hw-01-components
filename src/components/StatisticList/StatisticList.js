@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Statistics } from 'components/Statistics/Statistic';
 
 import { Statistic ,StatisticSection } from './StatisticList.styled';
@@ -19,3 +21,8 @@ export const StatisticList = ({ title, items }) => {
     </ Statistic>
   );
 };
+
+StatisticList.propTypes={
+  title:PropTypes.string.isRequired,
+  items:PropTypes.arrayOf(PropTypes.shape({id:PropTypes.string.isRequired})).isRequired
+  }

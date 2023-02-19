@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { FriendItem } from "components/FriendsItem/FriendItem";
 import { SectionFriendListUl, SectionFriendListLi } from "./FriendsList.styled";
 
@@ -14,3 +16,7 @@ export const FriendList = ({ items }) => {
     </SectionFriendListUl >
   );
 };
+
+FriendList.propTypes={
+  items:PropTypes.arrayOf(PropTypes.shape({id:PropTypes.number.isRequired})).isRequired
+  }
